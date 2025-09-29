@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Events and Basic Interactivity</title>
+</head>
+<body>
+     <h1>Registration Form</h1>
+    <h3>Fill in the following form with correct details</h3>
+      <button class="toggle-btn" onclick="toggleMode()" id="modeBtn">🌙 Dark Mode</button>
+    <form action="submit">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <small class="error" id="emailError"></small>
+
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" required>
+        <small class="error" id="phoneError"></small>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <small class="error" id="ageError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <small class="error" id="passwordError"></small>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <small class="error" id="confirmPasswordError"></small>
+
+
+        <div class="newsletter">
+        <label for="newsletter">Subscribe to our Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        </div>
+        <button type="submit">Sign Up</button>
+
+    </form>
+    <div class="success-message"></div>
+
+    <footer>
+         <h2>❓ Frequently Asked Questions</h2>
+
+  <div class="faq">
+    <button class="faq-question">What is this website about? ▼</button>
+    <div class="faq-answer">
+      <p>This website is about providing helpful resources and tutorials.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">How can I contact support? ▼</button>
+    <div class="faq-answer">
+      <p>You can contact support via email at support@example.com.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">Is this service free? ▼</button>
+    <div class="faq-answer">
+      <p>Yes, our service is completely free to use.</p>
+    </div>
+  </div>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
